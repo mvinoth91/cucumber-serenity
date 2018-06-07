@@ -1,0 +1,48 @@
+<acceptance-test-run title="Sign in" name="Sign in" description="" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="19467" timestamp="2018-06-07T16:49:46.551+08:00" session-id="a6ba89b4f109a40a0646a322d8ff3d2b">
+  <user-story id="sign-in" name="Sign in" path="src/test/resources/features/Signin.feature"/>
+  <tags>
+    <tag name="Sign in" type="feature"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="SignIn" description=""/>
+    </datasets>
+    <headers>
+      <header>paswd</header>
+      <header>emailID</header>
+      <header>fname</header>
+      <header>lname</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Test@123</value>
+        <value>testingautomation1234@gmail.com</value>
+        <value>Test</value>
+        <value>Automation</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {paswd=Test@123, emailID=testingautomation1234@gmail.com, fname=Test, lname=Automation}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="d06c46aa2b1b14497399f2f4fd10dce9.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="14074">
+      <screenshots>
+        <screenshot image="d06c46aa2b1b14497399f2f4fd10dce9.png"/>
+      </screenshots>
+      <description>Given I have user details for sign in</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2435">
+      <screenshots>
+        <screenshot image="4c8d5dfea877dcae15d47bf4a5748433.png"/>
+      </screenshots>
+      <description>When I enter username and password Test@123 testingautomation1234@gmail.com</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2534">
+      <screenshots>
+        <screenshot image="d06c46aa2b1b14497399f2f4fd10dce9.png"/>
+      </screenshots>
+      <description>Then verify user is logged in successfully TestAutomation</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>
