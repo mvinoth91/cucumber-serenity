@@ -1,0 +1,68 @@
+<acceptance-test-run title="Sign up" name="Sign up" description="" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="27124" timestamp="2018-06-08T10:40:12.438+08:00" session-id="ebef06d39dbafdf75829ca60e2bfb708">
+  <user-story id="signing-up" name="Signing up" path="src/test/resources/features/Signup.feature"/>
+  <tags>
+    <tag name="Signing up" type="feature"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="Signup" description=""/>
+    </datasets>
+    <headers>
+      <header>gender</header>
+      <header>fname</header>
+      <header>lname</header>
+      <header>pwd</header>
+      <header>day</header>
+      <header>month</header>
+      <header>year</header>
+      <header>emailID</header>
+      <header>city</header>
+      <header>country</header>
+      <header>state</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Mr</value>
+        <value>pertest</value>
+        <value>pertest</value>
+        <value>Test@123</value>
+        <value>22</value>
+        <value>6</value>
+        <value>1991</value>
+        <value>digitaltest</value>
+        <value>Singapore</value>
+        <value>21</value>
+        <value>1</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {gender=Mr, fname=pertest, lname=pertest, pwd=Test@123, day=22, month=6, year=1991, emailID=digitaltest, city=Singapore, country=21, state=1}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="b99bfa761267b8c7326f128f23c4b95b.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="15759">
+      <screenshots>
+        <screenshot image="b99bfa761267b8c7326f128f23c4b95b.png"/>
+      </screenshots>
+      <description>Given I have user details for sign in</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="651">
+      <screenshots>
+        <screenshot image="a464d37c064fea537d50b61a8891ffd9.png"/>
+      </screenshots>
+      <description>When I click on register new account digitaltest</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6816">
+      <screenshots>
+        <screenshot image="a7f8e00383d843aff6401b6c47626a65.png"/>
+      </screenshots>
+      <description>Then I should be able to enter details for registration Mr pertest pertest Test@123 22 6 1991 Singapore 21 1 account page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3440">
+      <screenshots>
+        <screenshot image="b99bfa761267b8c7326f128f23c4b95b.png"/>
+      </screenshots>
+      <description>And user should be able to sign up successfully pertest pertest</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

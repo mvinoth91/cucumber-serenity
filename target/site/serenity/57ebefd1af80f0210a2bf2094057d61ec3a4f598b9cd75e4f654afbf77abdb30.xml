@@ -1,0 +1,106 @@
+<acceptance-test-run title="Sign in" name="Sign in" description="" steps="9" successful="9" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="52514" timestamp="2018-06-08T10:46:28.083+08:00" session-id="23b0146012bf1461ddba0838b3c2ce01">
+  <user-story id="sign-in" name="Sign in" path="src/test/resources/features/Signin.feature"/>
+  <tags>
+    <tag name="Sign in" type="feature"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="SignIn" description=""/>
+    </datasets>
+    <headers>
+      <header>paswd</header>
+      <header>emailID</header>
+      <header>fname</header>
+      <header>lname</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Test@123</value>
+        <value>testingautomation1234@gmail.com</value>
+        <value>Test</value>
+        <value>Automation</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Test@123</value>
+        <value>teautomation1234@gmail.com</value>
+        <value>Test</value>
+        <value>Automation</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Test@123</value>
+        <value>teautomation1234</value>
+        <value>Test</value>
+        <value>Automation</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {paswd=Test@123, emailID=testingautomation1234@gmail.com, fname=Test, lname=Automation}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="b99bfa761267b8c7326f128f23c4b95b.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="13828">
+      <screenshots>
+        <screenshot image="b99bfa761267b8c7326f128f23c4b95b.png"/>
+      </screenshots>
+      <description>Given I have user details for sign in</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2696">
+      <screenshots>
+        <screenshot image="0de8929359a0c51452719edc5f52d3b0.png"/>
+      </screenshots>
+      <description>When I enter username and password Test@123 testingautomation1234@gmail.com</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2508">
+      <screenshots>
+        <screenshot image="b99bfa761267b8c7326f128f23c4b95b.png"/>
+      </screenshots>
+      <description>Then verify user is logged in successfully TestAutomation</description>
+    </test-step>
+  </test-group>
+  <test-group name="[1] {paswd=Test@123, emailID=teautomation1234@gmail.com, fname=Test, lname=Automation}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="b83805b167b8803cd4ffce757cffbbad.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="11598">
+      <screenshots>
+        <screenshot image="b99bfa761267b8c7326f128f23c4b95b.png"/>
+      </screenshots>
+      <description>Given I have user details for sign in</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1966">
+      <screenshots>
+        <screenshot image="b83805b167b8803cd4ffce757cffbbad.png"/>
+      </screenshots>
+      <description>When I enter username and password Test@123 teautomation1234@gmail.com</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1326">
+      <screenshots>
+        <screenshot image="b83805b167b8803cd4ffce757cffbbad.png"/>
+      </screenshots>
+      <description>Then verify user is logged in successfully TestAutomation</description>
+    </test-step>
+  </test-group>
+  <test-group name="[1] {paswd=Test@123, emailID=teautomation1234, fname=Test, lname=Automation}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="48557e6cf726822e52ef5bb00805ad0b.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="12489">
+      <screenshots>
+        <screenshot image="b99bfa761267b8c7326f128f23c4b95b.png"/>
+      </screenshots>
+      <description>Given I have user details for sign in</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1985">
+      <screenshots>
+        <screenshot image="48557e6cf726822e52ef5bb00805ad0b.png"/>
+      </screenshots>
+      <description>When I enter username and password Test@123 teautomation1234</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1385">
+      <screenshots>
+        <screenshot image="48557e6cf726822e52ef5bb00805ad0b.png"/>
+      </screenshots>
+      <description>Then verify user is logged in successfully TestAutomation</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>
